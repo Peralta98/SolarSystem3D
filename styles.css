@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#planet-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#planet-panel {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+#planet-panel h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 120px;
+}
+
+.planet-button {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 10px;
+    background-color: #8300c0;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.planet-button:hover {
+    background-color: #8300c0a4;
+}
+
+
+
+#info-box {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    border: 2px solid #67007c;
+    max-width: 80%;
+    text-align: center;
+}
+
+#info-box button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #67007c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#controls-hud {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+}
+
+.key-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.key {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    font-weight: bold;
+}
+
+.hud-text {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#fullscreen-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+    outline: none; /* Remove o outline */
+}
+
+#fullscreen-button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.25); /* Adiciona um efeito de scale up */
+}
+
+#fullscreen-button:focus {
+    outline: none; /* Remove o outline quando o botão está focado */
+}
+
+/* Adicione esta regra para remover o efeito de foco em todos os navegadores */
+#fullscreen-button::-moz-focus-inner {
+    border: 0;
+}
